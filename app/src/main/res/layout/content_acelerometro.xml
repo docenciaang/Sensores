@@ -12,22 +12,25 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
-            android:layout_marginLeft="164dp"
-            android:layout_marginBottom="28dp"
-            android:text="TextView"
+            android:layout_marginBottom="80dp"
+            android:text="@string/textview"
             app:layout_constraintBottom_toTopOf="@+id/btPausa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
             app:layout_constraintStart_toStartOf="parent" />
 
     <Button
             android:id="@+id/btPausa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="148dp"
-            android:layout_marginLeft="148dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginBottom="40dp"
             android:text="Pausa"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btContinuar"
             app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -39,5 +42,6 @@
             android:layout_marginBottom="40dp"
             android:text="Continuar"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btPausa" />
 </android.support.constraint.ConstraintLayout>
